@@ -1,0 +1,167 @@
+/* Reset and base styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  background: #f3f6fb;
+  color: #1f2937;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Header and navigation */
+header {
+  padding: 3rem 1.5rem;
+  background: #2563eb;
+  color: #ffffff;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+}
+
+header p {
+  margin-top: 0.4rem;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+  margin-top: 1.25rem;
+}
+
+nav a {
+  border-radius: 0.4rem;
+  color: #ffffff;
+  padding: 0.45rem 0.8rem;
+  text-decoration: none;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+nav a:hover {
+  background: #1d4ed8;
+  transform: translateY(-2px);
+}
+
+/* Layout and cards */
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1.25rem;
+}
+
+main > h2,
+main > p {
+  margin-bottom: 1rem;
+}
+
+section {
+  margin: 1.5rem 0;
+  padding: 1.5rem;
+  background: #ffffff;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 12px rgb(31 41 55 / 0.1);
+}
+
+section h2 {
+  margin-bottom: 0.8rem;
+  color: #1e40af;
+}
+
+ol,
+#notes-list {
+  padding-left: 1.5rem;
+}
+
+.feature-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  list-style: none;
+}
+
+.feature-list li {
+  padding: 1rem;
+  background: #eff6ff;
+  border-radius: 0.5rem;
+  color: #1e3a8a;
+}
+
+/* Tables and forms */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 0.75rem;
+  border: 1px solid #dbe3ef;
+  text-align: left;
+}
+
+th {
+  background: #dbeafe;
+  color: #1e3a8a;
+}
+
+form p {
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.35rem;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.7rem;
+  border: 1px solid #94a3b8;
+  border-radius: 0.4rem;
+  font: inherit;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  padding: 0.7rem 1rem;
+  border: 0;
+  border-radius: 0.4rem;
+  background: #2563eb;
+  color: #ffffff;
+  cursor: pointer;
+  font: inherit;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background: #1d4ed8;
+  transform: translateY(-2px);
+}
+
+footer {
+  padding: 1.5rem;
+  color: #475569;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  header {
+    padding: 2rem 1rem;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+}
