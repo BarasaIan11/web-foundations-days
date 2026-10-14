@@ -1,0 +1,81 @@
+:root {
+  --page-background: #f4f7fb;
+  --surface: #ffffff;
+  --text: #1f2937;
+  --border: #cbd5e1;
+  --accent: #2563eb;
+  --accent-text: #ffffff;
+}
+
+body.dark {
+  --page-background: #111827;
+  --surface: #1f2937;
+  --text: #f8fafc;
+  --border: #475569;
+  --accent: #60a5fa;
+  --accent-text: #0f172a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--page-background);
+  color: var(--text);
+  font-family: Arial, sans-serif;
+}
+
+main {
+  max-width: 680px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 0.75rem;
+}
+
+label,
+textarea,
+button {
+  display: block;
+}
+
+label {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+  resize: vertical;
+}
+
+button {
+  display: inline-block;
+  margin: 0.5rem 0.5rem 0 0;
+  padding: 0.65rem 1rem;
+  border: 0;
+  border-radius: 0.4rem;
+  background: var(--accent);
+  color: var(--accent-text);
+  cursor: pointer;
+  font: inherit;
+}
+
+.warning {
+  color: #d97706;
+}
+
+.over {
+  color: #dc2626;
+  font-weight: bold;
+}
